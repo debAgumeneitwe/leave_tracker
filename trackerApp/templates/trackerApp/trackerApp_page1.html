@@ -1,0 +1,9 @@
+  {% extends "tracker/header.html" %}
+
+{% block content %}
+    {% for employee in object_list %}
+        <h5>{{ employee.employee_id }}<a href="/trackerApp/{{ employee.id }}"> {{employee.employee_name}}</a> </h5>
+    {% endfor %}
+
+{% include "tracker/includes/htmlsnippet.html" %}
+{% endblock %}
