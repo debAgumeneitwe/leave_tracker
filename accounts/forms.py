@@ -9,5 +9,17 @@ class UserLoginForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields = ['username', 'Password']
+        fields = ['username', 'password']  # fields appearing on the form
+
+
+# class UserForm(forms.ModelForm):
+#     class Meta:
+#         model = User
+#         fields = ('first_name', 'last_name', 'email')
+#
+# class ProfileForm(forms.ModelForm):
+#     class Meta:
+#         model = Profile
+#         fields = ('url', 'location', 'company')
+
 

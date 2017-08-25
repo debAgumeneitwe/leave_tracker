@@ -19,9 +19,9 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('tracker.urls')),
-    url(r'^trackerApp/', include('trackerApp.urls')),
-    #url(r'^accounts/', include('django.contrib.auth.urls')),
-    url(r'^login/', include('accounts.urls')),
+    url(r'^trackerApp/', include('trackerApp.urls', namespace='trackerApp')),
+    # url(r'^accounts/', include('django.contrib.auth.urls')),
+    url(r'^accounts/', include('accounts.urls')),
 
 
 

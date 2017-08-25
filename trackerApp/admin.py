@@ -1,5 +1,5 @@
 from django.contrib import admin
 
-from trackerApp.models import Employee
+from trackerApp.models import EmployeeProfile
 
-admin.site.register(Employee)
+admin.site.register(EmployeeProfile)

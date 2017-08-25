@@ -12,6 +12,7 @@ def index(request):
     # return HttpResponse("<h2>WELCOME TO THE LEAVE TRACKER HOMEPAGE</h2>")
     return render(request, 'tracker/home.html')
 
+
 def contact(request):
     return render(request, 'tracker/contact.html', {'contents': ['If you have any issues please contact me at','agugudebz@gmail.com']})
 
